@@ -17,10 +17,10 @@ const Header: FC<HeaderProps> = ({ children }) => {
   };
   useEffect(() => {
     switch (location.pathname) {
-       case '/': document.body.style.cssText = `background-image: url("../assets/happy.png")`; break;
-      case '/send-gift': document.body.style.cssText = `background-image: url("../assets/background.jpg")`; break;
-      case '/send-to-SantaClaus': document.body.style.cssText = `background-image: url("../assets/back.jpg")`; break;
-      default: document.body.style.cssText = `background-image: url("../assets/happy.png")`;
+       case '/': document.body.style.cssText = `background-image: url(${import.meta.env.BASE_URL}/public/happy.png)`; break;
+      case '/send-gift': document.body.style.cssText = `background-image: url(${import.meta.env.BASE_URL}/public/background.jpg)`; break;
+      case '/send-to-SantaClaus': document.body.style.cssText = `background-image: url(${import.meta.env.BASE_URL}/public/back.jpg)`; break;
+      default: document.body.style.cssText = `background-image: url(${import.meta.env.BASE_URL}/public/happy.png)`;
      }
  }, [location]);
 
