@@ -44,7 +44,7 @@ const Send:FC = ()=> {
       <button type="submit">Отправить!</button>
       
       {ok === 0 && <p style={{color:"black"}}>{status}</p>}
-      {ok === 1 && <p style={{color:"green"}}>{status}</p>}
+      {ok === 1 && <p style={{color:"greenyellow"}}>{status}</p>}
       {ok === 2 && <p style={{color:"red"}}>{status}</p>}
     </form>
   </>

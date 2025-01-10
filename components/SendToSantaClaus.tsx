@@ -1,6 +1,10 @@
 import axios from "axios";
 import React from "react";
 import { FC, FormEvent, useState } from "react"
+
+
+React.version
+
 const SendSantaClaus:FC = ()=> {
     const [name, setName] = useState<string>('');
     const [message, setMessage] = useState<string>('')
@@ -50,11 +54,10 @@ const SendSantaClaus:FC = ()=> {
             </label>
             <button type="submit">Отправить</button>
             {ok === 0 && <p style={{color:"black"}}>{status}</p>}
-             {ok === 1 && <p style={{color:"green"}}>{status}</p>}
+             {ok === 1 && <p style={{color:"greenyellow"}}>{status}</p>}
             {ok === 2 && <p style={{color:"red"}}>{status}</p>}
         </form>
         </>
     )
 }
 export default SendSantaClaus;
-React
